@@ -25,7 +25,8 @@ ActiveRecord::Schema.define(version: 2020_12_10_175250) do
   create_table "user_histories", force: :cascade do |t|
     t.integer "user_id"
     t.integer "patient_id"
-    t.string "action"
+    t.string "patient_name"
+    t.string "user_action"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
